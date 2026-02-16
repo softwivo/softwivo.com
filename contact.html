@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Softwivo | Software a tu Medida</title>
+  <meta name="description" content="Contacta a Softwivo: consultora tecnol&oacute;gica lista para tu proyecto. Desarrollo de software a tu medida. Contact our technology consultants.">
+  <meta name="keywords" content="contacto programadores, consultora tecnol&oacute;gica contacto, servicios tecnol&oacute;gicos, desarrollo de software, contact programmers, technology consulting contact, tech services, software development">
+  <meta name="author" content="Softwivo">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://softwivo.com/contact.html">
+  <meta property="og:title" content="Contacto — Softwivo">
+  <meta property="og:description" content="Contacta a nuestra consultora tecnol&oacute;gica. Contact our technology consultants.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://softwivo.com/contact.html">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="Softwivo">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contacto — Softwivo">
+  <meta name="twitter:description" content="Contacta a nuestra consultora tecnol&oacute;gica para tu pr&oacute;ximo proyecto.">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Softwivo",
+      "email": "hola@softwivo.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CO"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">Soft<span>wivo</span></a>
+      <ul class="navbar__links">
+        <li><a href="services.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+        <li><a href="products.html" data-es="Productos" data-en="Products">Productos</a></li>
+        <li><a href="contact.html" class="active" data-es="Contacto" data-en="Contact">Contacto</a></li>
+        <li>
+          <div class="navbar__controls">
+            <div class="lang-toggle">
+              <button data-lang="es" class="active">ES</button>
+              <span>|</span>
+              <button data-lang="en">EN</button>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle dark mode">&#127769;</button>
+          </div>
+        </li>
+      </ul>
+      <button class="navbar__hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-header__title"
+          data-es="Contacto"
+          data-en="Contact">
+        Contacto
+      </h1>
+      <p class="page-header__desc"
+         data-es="Estamos listos para escucharte. Env&iacute;anos un mensaje y te responderemos pronto."
+         data-en="We're ready to listen. Send us a message and we'll get back to you soon.">
+        Estamos listos para escucharte. Env&iacute;anos un mensaje y te responderemos pronto.
+      </p>
+    </div>
+  </header>
+
+  <!-- Contact Form -->
+  <section class="section">
+    <div class="container">
+      <form class="contact-form" id="contact-form">
+        <div class="form-group">
+          <label for="name" data-es="Nombre" data-en="Name">Nombre</label>
+          <input type="text" id="name" name="name" required
+                 data-es-placeholder="Tu nombre"
+                 data-en-placeholder="Your name"
+                 placeholder="Tu nombre">
+        </div>
+        <div class="form-group">
+          <label for="email" data-es="Correo electr&oacute;nico" data-en="Email">Correo electr&oacute;nico</label>
+          <input type="email" id="email" name="email" required
+                 data-es-placeholder="tu@correo.com"
+                 data-en-placeholder="you@email.com"
+                 placeholder="tu@correo.com">
+        </div>
+        <div class="form-group">
+          <label for="message" data-es="Mensaje" data-en="Message">Mensaje</label>
+          <textarea id="message" name="message" required
+                    data-es-placeholder="Cu&eacute;ntanos sobre tu proyecto..."
+                    data-en-placeholder="Tell us about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary" id="contact-submit"
+                data-es="Enviar mensaje"
+                data-en="Send message">
+          Enviar mensaje
+        </button>
+        <div class="form-status" id="form-status"></div>
+      </form>
+
+      <div class="contact-info">
+        <p><strong>Email:</strong> hola@softwivo.com</p>
+        <p><strong data-es="Sede principal" data-en="Headquarters">Sede principal</strong>: Colombia</p>
+        <p class="contact-info__address"
+           data-es="<!-- TODO: Agregar direcci&oacute;n de sede principal -->"
+           data-en="<!-- TODO: Add headquarters address -->">
+          <!-- TODO: Agregar direcci&oacute;n de sede principal -->
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Softwivo. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+      <ul class="footer__socials">
+        <!-- <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li> -->
+        <li><a href="https://github.com/softwivo" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
+        <li><a href="legal.html" data-es="Legal" data-en="Legal">Legal</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
