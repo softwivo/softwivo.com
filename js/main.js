@@ -57,19 +57,17 @@
   // ========== Dark Mode ==========
   const THEME_KEY = "softwivo-theme";
 
-  function detectThemeByTime() {
-    const hour = new Date().getHours();
-    return hour >= 19 || hour < 7 ? "dark" : "light";
+  function getSystemTheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
   }
 
   function getStoredTheme() {
-    const stored = localStorage.getItem(THEME_KEY);
-    if (stored) return stored;
-    return detectThemeByTime();
+    return localStorage.getItem(THEME_KEY);
   }
 
-  function setTheme(theme) {
-    localStorage.setItem(THEME_KEY, theme);
+  function applyTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
     document.querySelectorAll(".theme-toggle").forEach((btn) => {
       btn.textContent = theme === "dark" ? "\u2600\uFE0F" : "\uD83C\uDF19";
@@ -78,6 +76,11 @@
         theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
       );
     });
+  }
+
+  function setTheme(theme) {
+    localStorage.setItem(THEME_KEY, theme);
+    applyTheme(theme);
   }
 
   // ========== Contact Form ==========
@@ -144,8 +147,19 @@
       btn.addEventListener("click", () => setLang(btn.dataset.lang));
     });
 
-    // Dark mode
-    setTheme(getStoredTheme());
+    // Dark mode — use stored preference, or fall back to system default
+    const storedTheme = getStoredTheme();
+    applyTheme(storedTheme || getSystemTheme());
+
+    // Follow system theme changes when user hasn't set a manual preference
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (e) => {
+        if (!localStorage.getItem(THEME_KEY)) {
+          applyTheme(e.matches ? "dark" : "light");
+        }
+      });
+
     document.querySelectorAll(".theme-toggle").forEach((btn) => {
       btn.addEventListener("click", () => {
         const current = document.documentElement.getAttribute("data-theme");
