@@ -85,7 +85,7 @@
 
   // ========== Contact Form ==========
   // Configure your cloud endpoint here:
-  const CONTACT_API_URL = "https://YOUR_CLOUD_FUNCTION_URL/contact";
+  const CONTACT_API_URL = "https://mkmivua3t9.execute-api.us-east-1.amazonaws.com/contact";
 
   function initContactForm() {
     const form = document.getElementById("contact-form");
