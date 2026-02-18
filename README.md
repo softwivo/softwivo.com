@@ -1,3 +1,3 @@
 # softwivo.com
 
-Live at: https://softwivo.github.io/softwivo.com/services.html
+Live at: https://softwivo.github.io/softwivo.com/
