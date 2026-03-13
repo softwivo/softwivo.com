@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nanobanana-manual": {
+      "command": "node /Users/nicolas.macias/.gemini/extensions/nanobanana/mcp-server/dist/index.js",
+      "args": []
+    }
+  }
+}

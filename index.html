@@ -20,6 +20,7 @@
   <meta name="twitter:title" content="Softwivo — Software a tu Medida">
   <meta name="twitter:description" content="Consultora tecnol&oacute;gica: software adaptado a tus necesidades que impulsa innovaci&oacute;n y eficiencia.">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -65,7 +66,8 @@
   </nav>
 
   <!-- Hero -->
-  <header class="hero">
+  <header class="hero section--with-bg">
+    <img class="section-bg-img section-bg-img--right section-bg-img--flip" src="images/hero-fluid.png" aria-hidden="true">
     <div class="container">
       <h1 class="hero__title"
           data-es="Software a tu medida"
@@ -85,161 +87,192 @@
     </div>
   </header>
 
-  <!-- Capabilities -->
-  <section class="section section--light">
+  <!-- Value Props -->
+  <section class="section section--light section--with-bg">
+    <img class="section-bg-img section-bg-img--right" src="images/section-network.png" aria-hidden="true">
     <div class="container">
       <h2 class="section__title"
-          data-es="Nuestras capacidades"
-          data-en="Our capabilities">
-        Nuestras capacidades
+          data-es="Lo que obtienes"
+          data-en="What you get">
+        Lo que obtienes
       </h2>
       <p class="section__subtitle"
-         data-es="Cubrimos todo el ciclo de vida del software &mdash; desde la idea hasta la operaci&oacute;n en producci&oacute;n."
-         data-en="We cover the full software lifecycle &mdash; from idea to production operations.">
-        Cubrimos todo el ciclo de vida del software &mdash; desde la idea hasta la operaci&oacute;n en producci&oacute;n.
+         data-es="Sin tecnicismos. Solo resultados concretos para tu negocio."
+         data-en="No tech jargon. Just concrete results for your business.">
+        Sin tecnicismos. Solo resultados concretos para tu negocio.
       </p>
-      <div class="capabilities">
-        <article class="capability">
-          <div class="capability__icon">&#128736;</div>
-          <h3 class="capability__title"
-              data-es="Estrategia y planificaci&oacute;n"
-              data-en="Strategy &amp; planning">
-            Estrategia y planificaci&oacute;n
-          </h3>
-          <p class="capability__text"
-             data-es="Antes de construir, planificamos. Analizamos tus procesos, definimos la mejor soluci&oacute;n y trazamos una hoja de ruta clara para que sepas exactamente qu&eacute; esperar."
-             data-en="Before we build, we plan. We analyze your processes, define the best solution, and map out a clear roadmap so you know exactly what to expect.">
-            Antes de construir, planificamos. Analizamos tus procesos, definimos la mejor soluci&oacute;n y trazamos una hoja de ruta clara para que sepas exactamente qu&eacute; esperar.
-          </p>
+      <div class="value-props">
+        <article class="value-prop">
+          <div class="value-prop__icon"><i class="fa-solid fa-bullseye"></i></div>
+          <div>
+            <h3 class="value-prop__title"
+                data-es="Software que resuelve tu problema"
+                data-en="Software that solves your problem">
+              Software que resuelve tu problema
+            </h3>
+            <p class="value-prop__text"
+               data-es="Partimos de tu desaf&iacute;o, no de la tecnolog&iacute;a. Construimos exactamente lo que tu operaci&oacute;n necesita, sin complejidad innecesaria."
+               data-en="We start from your challenge, not from technology. We build exactly what your operation needs, without unnecessary complexity.">
+              Partimos de tu desaf&iacute;o, no de la tecnolog&iacute;a. Construimos exactamente lo que tu operaci&oacute;n necesita, sin complejidad innecesaria.
+            </p>
+          </div>
         </article>
-        <article class="capability">
-          <div class="capability__icon">&#128187;</div>
-          <h3 class="capability__title"
-              data-es="Desarrollo de aplicaciones"
-              data-en="Application development">
-            Desarrollo de aplicaciones
-          </h3>
-          <p class="capability__text"
-             data-es="Construimos aplicaciones web y m&oacute;viles completas, desde lo que el usuario ve hasta lo que hace funcionar todo por detr&aacute;s. Una soluci&oacute;n integral, un solo equipo."
-             data-en="We build complete web and mobile applications, from what the user sees to what makes everything work behind the scenes. One comprehensive solution, one team.">
-            Construimos aplicaciones web y m&oacute;viles completas, desde lo que el usuario ve hasta lo que hace funcionar todo por detr&aacute;s. Una soluci&oacute;n integral, un solo equipo.
-          </p>
+        <article class="value-prop">
+          <div class="value-prop__icon"><i class="fa-solid fa-bolt"></i></div>
+          <div>
+            <h3 class="value-prop__title"
+                data-es="Disponible cuando m&aacute;s importa"
+                data-en="Available when it matters most">
+              Disponible cuando m&aacute;s importa
+            </h3>
+            <p class="value-prop__text"
+               data-es="Tu plataforma funciona las 24 horas. Nosotros gestionamos la disponibilidad, la seguridad y las actualizaciones &mdash; t&uacute; te enfocas en tu negocio."
+               data-en="Your platform runs 24 hours. We manage availability, security, and updates &mdash; you focus on your business.">
+              Tu plataforma funciona las 24 horas. Nosotros gestionamos la disponibilidad, la seguridad y las actualizaciones &mdash; t&uacute; te enfocas en tu negocio.
+            </p>
+          </div>
         </article>
-        <article class="capability">
-          <div class="capability__icon">&#127793;</div>
-          <h3 class="capability__title"
-              data-es="Expertos en tu industria"
-              data-en="Industry experts">
-            Expertos en tu industria
-          </h3>
-          <p class="capability__text"
-             data-es="Contamos con especialistas que conocen tu sector desde adentro. No adivinamos c&oacute;mo funciona tu negocio &mdash; lo entendemos porque lo hemos vivido."
-             data-en="We have specialists who know your industry from the inside. We don't guess how your business works &mdash; we understand it because we've lived it.">
-            Contamos con especialistas que conocen tu sector desde adentro. No adivinamos c&oacute;mo funciona tu negocio &mdash; lo entendemos porque lo hemos vivido.
-          </p>
+        <article class="value-prop">
+          <div class="value-prop__icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div>
+            <h3 class="value-prop__title"
+                data-es="Crece sin preocuparte"
+                data-en="Grow without worry">
+              Crece sin preocuparte
+            </h3>
+            <p class="value-prop__text"
+               data-es="Tu software est&aacute; dise&ntilde;ado para crecer. Si tu negocio pasa de 10 a 10,000 clientes, tu plataforma lo maneja sin fricci&oacute;n."
+               data-en="Your software is built to scale. If your business goes from 10 to 10,000 clients, your platform handles it without friction.">
+              Tu software est&aacute; dise&ntilde;ado para crecer. Si tu negocio pasa de 10 a 10,000 clientes, tu plataforma lo maneja sin fricci&oacute;n.
+            </p>
+          </div>
         </article>
-        <article class="capability">
-          <div class="capability__icon">&#9729;&#65039;</div>
-          <h3 class="capability__title"
-              data-es="Disponibilidad y confiabilidad"
-              data-en="Reliability &amp; Uptime">
-            Disponibilidad y confiabilidad
-          </h3>
-          <p class="capability__text"
-             data-es="Tu software siempre funcionando. Nos encargamos de que los sistemas est&eacute;n disponibles, actualizados y protegidos las 24 horas, los 7 d&iacute;as de la semana."
-             data-en="Your software always running. We ensure your systems are available, up to date, and protected 24 hours a day, 7 days a week.">
-            Tu software siempre funcionando. Nos encargamos de que los sistemas est&eacute;n disponibles, actualizados y protegidos las 24 horas, los 7 d&iacute;as de la semana.
-          </p>
-        </article>
-        <article class="capability">
-          <div class="capability__icon">&#128279;</div>
-          <h3 class="capability__title"
-              data-es="Plataformas que crecen contigo"
-              data-en="Platforms that scale with you">
-            Plataformas que crecen contigo
-          </h3>
-          <p class="capability__text"
-             data-es="Construimos soluciones preparadas para crecer. Si tu negocio pasa de 10 a 10,000 usuarios, tu software lo soporta sin problemas."
-             data-en="We build solutions ready to grow. If your business goes from 10 to 10,000 users, your software handles it seamlessly.">
-            Construimos soluciones preparadas para crecer. Si tu negocio pasa de 10 a 10,000 usuarios, tu software lo soporta sin problemas.
-          </p>
-        </article>
-        <article class="capability">
-          <div class="capability__icon">&#128161;</div>
-          <h3 class="capability__title"
-              data-es="Soporte continuo"
-              data-en="Ongoing support">
-            Soporte continuo
-          </h3>
-          <p class="capability__text"
-             data-es="No desaparecemos despu&eacute;s del lanzamiento. Te acompa&ntilde;amos con mantenimiento, mejoras y soporte para que tu software evolucione junto con tu negocio."
-             data-en="We don't disappear after launch. We stay with you providing maintenance, improvements, and support so your software evolves alongside your business.">
-            No desaparecemos despu&eacute;s del lanzamiento. Te acompa&ntilde;amos con mantenimiento, mejoras y soporte para que tu software evolucione junto con tu negocio.
-          </p>
+        <article class="value-prop">
+          <div class="value-prop__icon"><i class="fa-solid fa-handshake"></i></div>
+          <div>
+            <h3 class="value-prop__title"
+                data-es="Un equipo que no desaparece"
+                data-en="A team that doesn't disappear">
+              Un equipo que no desaparece
+            </h3>
+            <p class="value-prop__text"
+               data-es="Despu&eacute;s del lanzamiento seguimos contigo. Tu software evoluciona a medida que tu negocio cambia, con el mismo equipo que lo construy&oacute;."
+               data-en="After launch we stay with you. Your software evolves as your business changes, with the same team that built it.">
+              Despu&eacute;s del lanzamiento seguimos contigo. Tu software evoluciona a medida que tu negocio cambia, con el mismo equipo que lo construy&oacute;.
+            </p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- What We Do -->
+  <!-- How We Work -->
   <section class="section">
     <div class="container">
       <h2 class="section__title"
-          data-es="Lo que hacemos"
-          data-en="What we do">
-        Lo que hacemos
+          data-es="C&oacute;mo trabajamos"
+          data-en="How we work">
+        C&oacute;mo trabajamos
       </h2>
       <p class="section__subtitle"
-         data-es="Servicios de desarrollo que se adaptan a ti y productos listos para transformar tu operaci&oacute;n."
-         data-en="Development services that adapt to you and products ready to transform your operation.">
-        Servicios de desarrollo que se adaptan a ti y productos listos para transformar tu operaci&oacute;n.
+         data-es="Antes de escribir una l&iacute;nea de c&oacute;digo, entendemos tu negocio."
+         data-en="Before writing a single line of code, we understand your business.">
+        Antes de escribir una l&iacute;nea de c&oacute;digo, entendemos tu negocio.
       </p>
-      <div class="cards">
-        <a href="services.html" class="card">
-          <div class="card__icon">&#9881;</div>
-          <h3 class="card__title"
-              data-es="Servicios tecnol&oacute;gicos"
-              data-en="Tech services">
-            Servicios tecnol&oacute;gicos
-          </h3>
-          <p class="card__text"
-             data-es="Desarrollo de software personalizado, consultor&iacute;a tecnol&oacute;gica e integraci&oacute;n de sistemas para tu empresa."
-             data-en="Custom software development, technology consulting, and systems integration for your business.">
-            Desarrollo de software personalizado, consultor&iacute;a tecnol&oacute;gica e integraci&oacute;n de sistemas para tu empresa.
-          </p>
-        </a>
-        <a href="products.html" class="card">
-          <div class="card__icon">&#9733;</div>
-          <h3 class="card__title"
-              data-es="Productos"
-              data-en="Products">
-            Productos
-          </h3>
-          <p class="card__text"
-             data-es="Soluciones de software propias que se adaptan a las necesidades espec&iacute;ficas de tu industria."
-             data-en="Our own software solutions that adapt to the specific needs of your industry.">
-            Soluciones de software propias que se adaptan a las necesidades espec&iacute;ficas de tu industria.
-          </p>
-        </a>
-        <a href="contact.html" class="card">
-          <div class="card__icon">&#9993;</div>
-          <h3 class="card__title"
-              data-es="Contacto"
-              data-en="Contact">
-            Contacto
-          </h3>
-          <p class="card__text"
-             data-es="Hablemos sobre tu proyecto. Estamos listos para escucharte."
-             data-en="Let's talk about your project. We're ready to listen.">
-            Hablemos sobre tu proyecto. Estamos listos para escucharte.
-          </p>
-        </a>
+
+      <div class="process-box">
+        <div class="process-steps">
+
+          <div class="process-step">
+            <span class="process-step__num">01</span>
+            <div class="process-step__body">
+              <h3 class="process-step__title"
+                  data-es="Exploramos y definimos"
+                  data-en="Explore &amp; define">
+                Exploramos y definimos
+              </h3>
+              <p class="process-step__text"
+                 data-es="Analizamos tu operaci&oacute;n, tus procesos y tus necesidades reales. No asumimos &mdash; preguntamos."
+                 data-en="We analyze your operation, your processes, and your real needs. We don't assume &mdash; we ask.">
+                Analizamos tu operaci&oacute;n, tus procesos y tus necesidades reales. No asumimos &mdash; preguntamos.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="process-step__num">02</span>
+            <div class="process-step__body">
+              <h3 class="process-step__title"
+                  data-es="Entendemos el negocio"
+                  data-en="Understand the core">
+                Entendemos el negocio
+              </h3>
+              <p class="process-step__text"
+                 data-es="Nos sumergimos en tu industria. Entendemos c&oacute;mo fluye el valor, d&oacute;nde est&aacute;n los cuellos de botella y qu&eacute; importa de verdad."
+                 data-en="We immerse ourselves in your industry. We understand how value flows, where the bottlenecks are, and what truly matters.">
+                Nos sumergimos en tu industria. Entendemos c&oacute;mo fluye el valor, d&oacute;nde est&aacute;n los cuellos de botella y qu&eacute; importa de verdad.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-step">
+            <span class="process-step__num">03</span>
+            <div class="process-step__body">
+              <h3 class="process-step__title"
+                  data-es="Dise&ntilde;amos la soluci&oacute;n"
+                  data-en="Design the solution">
+                Dise&ntilde;amos la soluci&oacute;n
+              </h3>
+              <p class="process-step__text"
+                 data-es="Proponemos la arquitectura m&aacute;s adecuada para tu contexto: escalable, mantenible y con disponibilidad garantizada."
+                 data-en="We propose the architecture best suited to your context: scalable, maintainable, and with guaranteed availability.">
+                Proponemos la arquitectura m&aacute;s adecuada para tu contexto: escalable, mantenible y con disponibilidad garantizada.
+              </p>
+            </div>
+          </div>
+
+          <div class="process-step process-step--ai">
+            <span class="process-step__num">04</span>
+            <div class="process-step__body">
+              <h3 class="process-step__title"
+                  data-es="IA experimental aplicada"
+                  data-en="Applied experimental AI">
+                IA experimental aplicada
+              </h3>
+              <p class="process-step__text"
+                 data-es="Cuando tiene sentido, integramos soluciones de inteligencia artificial de vanguardia. Exploramos lo que a&uacute;n no es est&aacute;ndar para darte ventaja."
+                 data-en="When it makes sense, we integrate cutting-edge artificial intelligence solutions. We explore what isn't standard yet to give you an edge.">
+                Cuando tiene sentido, integramos soluciones de inteligencia artificial de vanguardia. Exploramos lo que a&uacute;n no es est&aacute;ndar para darte ventaja.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="process-values">
+          <div class="process-values__item">
+            <span class="process-values__icon"><i class="fa-solid fa-circle-check"></i></span>
+            <p data-es="No cobramos por lo que no funciona. Si no entrega valor, no hay factura."
+               data-en="We don't charge for what doesn't work. If it delivers no value, there is no invoice.">
+              No cobramos por lo que no funciona. Si no entrega valor, no hay factura.
+            </p>
+          </div>
+          <div class="process-values__item">
+            <span class="process-values__icon"><i class="fa-solid fa-lightbulb"></i></span>
+            <p data-es="Innovamos porque creemos que el mejor software a&uacute;n est&aacute; por construirse."
+               data-en="We innovate because we believe the best software is yet to be built.">
+              Innovamos porque creemos que el mejor software a&uacute;n est&aacute; por construirse.
+            </p>
+          </div>
+        </div>
       </div>
+
     </div>
   </section>
 
   <!-- Who We Are -->
-  <section class="section section--light">
+  <section class="section section--light section--with-bg">
+    <img class="section-bg-img section-bg-img--left" src="images/section-circuit.png" aria-hidden="true">
     <div class="container">
       <h2 class="section__title"
           data-es="Quienes somos"
